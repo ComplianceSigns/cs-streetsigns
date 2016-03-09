@@ -1,0 +1,24 @@
+/* ---------------- # Final details Page classes ---------------- */
+.c-checkbox span, .c-radio span {
+  width: 16px;
+  height: 16px;
+  top: 5px;
+}
+
+.c-checkbox span:before, .c-radio span:before {
+  font-size: 8px;
+  line-height: 14px;
+  color: #333 !important;
+}
+
+.c-radio input[type=radio]:checked + span {
+  border-color: #666 !important;
+}
+
+.policy-read {
+  padding: 10px 0;
+}
+
+.policy-read p {
+  font-size: 14px;
+}

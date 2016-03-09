@@ -1,0 +1,129 @@
+/* ---------------- # Primary Sass File : Footer ---------------- */
+
+footer {
+    background: #7b7d7c;
+}
+
+.footer-in {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h4 {
+        font-size: 28px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    a:hover {
+        background: $grey-hover;
+    }
+}
+
+.foot-logo {
+    padding-top: 60px;
+}
+
+.foot-widget {
+    .col-lg-6 {
+        padding: 0px;
+    }
+    ul {
+        padding-left: 0px;
+        a {
+            color: #e4eef6;
+            text-transform: uppercase;
+            text-decoration: none;
+            li {
+                color: #e4eef6;
+                font-size: 14px;
+                list-style: none;
+                line-height: 26px;
+                &:hover {
+                    background: darken($grey-hover, 50);
+                }
+            }
+        }
+    }
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        background: none;
+    }
+}
+
+.foot-copyrights {
+    background: url(../../assets/images/footer/footer_copyright_bg.png)repeat-x top left #ebeef0;
+    padding: 20px 0 20px 0;
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #76706e;
+        margin: 0px;
+    }
+    
+    a {
+        color: #76706e;
+    }
+    
+    .footer-copy-wrap {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        ul {
+            padding-left: 0px;
+            &.soc-med {
+            	&:hover {
+            		a span {
+            			background: $grey-hover;
+        			}
+            	}
+            }
+            li {
+                list-style: none;
+                line-height: 26px;
+                display: inline;
+                padding-left: 5px;
+                padding-right: 5px;
+                background: transparent;
+                a {
+                	background:tranparent;
+                	&:hover {
+                		background:lighten($grey-background, 35);
+                		
+                	}
+                }
+            }
+        }
+    }
+}
+
+/* ---------------- # FOOTER Mobile Only Media Query Sass File -----------------  */
+
+@media screen and (max-width: 768px) {
+    .footer-in {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding: 20px 30px;
+        .foot-logo {
+            padding-top: 10px 30px 30px 30px;
+            max-width: 130px;
+            padding: 15px;
+        }
+        .foot-widget {
+            padding: 0;
+            ul {
+                padding-left: 0px;
+                li a {
+                    color: #e4eef6;
+                    font-size: 16px;
+                    list-style: none;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+}

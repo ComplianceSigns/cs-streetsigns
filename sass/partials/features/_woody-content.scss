@@ -1,0 +1,86 @@
+/* ---------------------- # Color variables : All color variables --------------- */
+
+.woody {
+    div.page-content {
+        margin-top: 0;
+        //background-image: url("../../assets/images/IFBI_Wood_backLOW.jpg");  //use for smaller screens (w=780)
+        background-image: url("../../assets/images/IFBI_Wood_back.jpg");
+        padding: 40px 80px 35px 110px;
+        h1 {
+            font-size: 55px;
+            color: #fff;
+            padding: 10px 0 10px 0;
+            margin: 0;
+            @include hfont-reg;
+        }
+        h2 {
+            font-size: 30px;
+            color: $near-black;
+            padding: 10px 0px 0px 0px;
+            @include hfont-reg;
+            margin: 0;
+            span.loud {
+                @include hfont-med;
+            }
+        }
+        h3 {
+            &.ul-list-header {
+                font-size: 22px;
+                color: $near-black;
+                text-transform: uppercase;
+                @include hfont-reg;
+                margin: 0 20px 5px 0;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: #fff;
+            padding: 15px 0 20px 0;
+            margin: 0;
+            &:last-child {
+                padding-bottom: 30px;
+            }
+        }
+        ul {
+        	padding-left:16px;
+
+            li {
+                color: #fff;
+                list-style: $bullet-normal !important;
+                @include list-normal;
+            }
+        }
+    }
+}
+/* ---------------  LINKS  ----------- */
+.woody {
+    ul li:hover {
+        color: $near-black;
+        cursor: default;
+    }
+    ul li a:hover {
+        color: $near-black;
+        cursor: pointer;
+    }
+    li, a {
+    display:inline-block;
+    text-align:center;
+}
+    span a {
+        text-decoration:underline;
+        &:hover {
+            text-decoration:underline;
+            //@include hfont-med;
+        }
+        a::after {
+            display:block;
+            content:attr(title);
+            font-weight:bold;
+            height:1px;
+            color:transparent;
+            overflow:hidden;
+            visibility:hidden;
+            margin-bottom:-1px;
+        }
+    }
+}

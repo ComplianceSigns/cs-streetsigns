@@ -1,0 +1,15 @@
+$zindex: (
+	icaf-spinner	: 10000,
+	modal     		: 9000, 
+	menuIconHam		: 8000,
+	menuSearcher	: -1,
+	menuLogoAbove	: 7500,	//this prevents hovers in menu from covering persistent logo element
+	menuDropdown	: 7000,  //this is the mainMenu
+	header			: 5000,
+	footer			: 1000,
+	menuOverlay		: 2		//this is the greycover (modal-like cover) that is used when menu is open
+);
+
+.header {
+  z-index: map-get($zindex, header);
+}

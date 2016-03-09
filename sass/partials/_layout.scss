@@ -1,0 +1,68 @@
+/* ---------------- # Reset: padding / Margins / positions ---------------- */
+.no-border{
+	border:0px none !important;
+}
+.pull-left {
+	padding-left: 10px;
+	padding-top: 4px;
+}
+.pull-right{
+	padding-top:7px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.half{
+	width: 50% !important;
+}
+.full{
+	width: 100% !important;
+}
+.row-position{
+	width: 100%;
+	margin-left: 20px;
+}
+.row-fix{
+	padding:0px !important;
+}
+.row-margin-left{
+	margin-left: -35px;
+}
+.row-margin-lt{
+	margin-left: -10px;
+}
+.row-margin-right{
+	margin-right: -35px;
+}
+.null-padding{
+	padding: 0px !important;
+}
+.null-right{
+	padding-right: 0px;
+}
+.null-margin{
+	margin: 0px !important;
+}
+.add-pd{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-top: 5px;
+}
+.add-margin{
+	margin-top: 13px;
+}
+.add-width{
+	width: 100px !important;
+}
+.no-margin{
+	margin: 0px !important;
+}
+.block-left{
+	border-right: 1px solid $border-color;
+}
+a.inline {
+	display:inline;
+}

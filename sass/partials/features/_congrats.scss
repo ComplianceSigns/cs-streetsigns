@@ -1,0 +1,39 @@
+.policy-block-wrap{
+	border: 1px solid $border-color;
+}
+.table-head{
+	background: $border-color;
+  	padding: 0px 10px;
+  	h3{
+  		margin:12px 0 8px 0;
+  		text-transform: uppercase;
+ 	}
+ 	.policy-left{
+ 		border-right: 1px solid #fff;
+ 	}
+}
+.policy-in-left{
+ 		border-right: 1px solid $border-color;
+ 	}
+.agent-block{ 
+	width: 100%;
+	border: 1px solid $border-color;
+}
+.agent-block-left{
+	background: $border-color;
+	padding: 20px;
+	address{
+		margin: 0px;
+	}
+	
+	.agent-block-img{
+		img{
+			width:76px;
+			height: 95px;
+			overflow: hidden;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+		
+} 

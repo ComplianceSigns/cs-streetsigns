@@ -1,0 +1,44 @@
+/* ------------------- # Social: Social media icons ------------------- */
+.social {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.social ul {
+  margin: 0;
+  padding-right: 20px;
+}
+
+.social ul li {
+  display: inline-block;
+  list-style: outside none none;
+}
+
+.social i {
+  border-radius: 0%;
+  color: #999;
+  font-size: 24px;
+  height: 35px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 35px;
+}
+
+.social i:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.social .fa-facebook:hover {
+  color: #000;
+}
+
+.social .fa-twitter:hover {
+  color: #000;
+}
+
+.social .fa-youtube-play:hover {
+  color: #000;
+}

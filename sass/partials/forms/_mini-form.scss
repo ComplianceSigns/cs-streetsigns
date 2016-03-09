@@ -1,0 +1,152 @@
+/* ---------------- # Reusable mini-form  -----------------  */
+
+.mini-form {
+    margin: 5px;
+    padding: 0;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    .input-group .form-control {
+        display: inline-block;
+    }
+    > div {
+        h3 {
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            padding: 0px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            @include hfont-reg;
+        }
+        &:first-child {
+            background: $near-black;
+            margin: 0;
+            padding: 10px 0;
+        }
+        &:nth-child(2) {
+            background: $background-lt-blue-grey;
+            vertical-align: middle;
+            font-size: 24px;
+            margin: 0;
+            padding: 15px;
+        }
+    }
+    .input-group {
+        position: inherit;
+        padding-right: 0;
+        display: flex;
+    }
+    .input-group-btn {
+        margin: 0 auto;
+        text-align: center;
+        margin: 10;
+        padding: 10px 10px;
+        min-width: inherit;
+    }
+    input {
+        margin-right: 3px;
+        height: 42px;
+    }
+    button[type=submit] {
+        height: 42px;
+        height: 42px;
+        width: 50px;
+        font-size: 22px;
+        border: none;
+        min-width: 20px;
+        width: 30px;
+        margin: -5px -5px 0 3px;
+    }
+    /* ------------------------------   Two field Mini Quote w/Submit -----------    */
+    
+    &.two-btn-sub {
+        input.form-control {
+            display: inline-block;
+            width: 45%;
+        }
+        .btn-sizing {
+            display: inline-block;
+            width: 45%;
+        }
+    }
+    /* ------------------------------   One field Mini Quote  w/Submit -----------    */
+    
+    &.one-btn-sub {
+        input.form-control {
+            display: inline-block;
+            width: 90%;
+        }
+        .btn-sizing {
+            display: inline-block;
+            width: 90%;
+        }
+        button[type=submit] {
+            margin-top: 0;
+        }
+    }
+    /* ------------------------------   Two ROW two field Mini Quote  w/Submit -----------    */
+    
+    &.two-row-two-btn-sub {
+        >div:first-child {
+            background: transparent;
+            margin: 0;
+            padding: 0;
+        }
+        >div:nth-child(2) {
+            background: transparent;
+            vertical-align: middle;
+            padding: 10px 10px;
+        }
+        input.form-control {
+            display: inline-block;
+            width: 100%;
+        }
+        .btn-sizing {
+            display: inline-block;
+            width: 90%;
+        }
+        button[type=submit] {
+            margin-top: 0;
+            width: 10%;
+        }
+        .input-group-btn {
+            padding: 10px 10px;
+        }
+    }
+}
+
+//BORDERLESS - NO BLACK BACKGROUND
+.borderless div.input-group-btn {
+    background: transparent !important;
+}
+.borderless {
+  background: transparent;
+  margin: 0;
+  padding: 10px 0;
+}
+.borderless {
+    div {
+        background: transparent;
+        h3 {
+            vertical-align: left;
+            text-align: center;
+            color: #000;
+        }
+        &:first-child {
+            background: transparent;
+        }
+        &:nth-child(2) {
+            background: transparent;
+            vertical-align: middle;
+        }
+    }
+    > div:first-child {
+        background: transparent !important;
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}

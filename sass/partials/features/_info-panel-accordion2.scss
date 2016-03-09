@@ -1,0 +1,220 @@
+/* ---------------- # Section Details Accordion -----------------  */
+
+.accordion-info-accordion2 {
+    div.row.row-fix {
+        margin-top: 0;
+        background-image: url("../../assets/images/wood.png");
+    }
+    #accordion-info-accordion2 {
+        margin-top: 0;
+        .panel {
+            background: transparent;
+            margin-bottom: 0;
+            border-bottom: 1px solid #fff;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 30px 60px;
+        }
+        div.collapsable-info {
+            padding-right: 20px;
+            h5 {
+                color: #fff;
+                @include hfont-med;
+                font-size: 15px;
+            }
+            a {
+                text-decoration: none;
+                @include hfont-med;
+                font-size: 17px;
+                &:hover {
+                    text-decoration: underline;
+                    background: transparent;
+                }
+            }
+        }
+        a.accordion-toggle {
+            font-size: $font-giant +28;
+            @include hfont-reg;
+            color: $near-black;
+            text-decoration: none;
+            padding: 0px 15px 0px 0px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: $near-black;
+                background: transparent;
+            }
+            &.collapsed {
+                color: #fff !important;
+                &:hover {
+                    color: $near-black;
+                }
+            }
+            span.glyphicon {
+                color: $near-black;
+                font-size: $font-giant +38;
+                padding: 0px 10px;
+                vertical-align: middle;
+                height: 100%;
+                top: -8px;
+                padding-right: 44px;
+                &.glyphicon-plus {}
+                &.glyphicon-minus {}
+            }
+        }
+        .panel-collapse.collapse.in .panel-body.page-content,
+        .panel-collapse.collapse .panel-body.page-content {
+            border-top-color: #ddd;
+            background: transparent;
+            margin: 0;
+        }
+        .page-content {
+            display: block;
+            margin: 0;
+            padding: 0 0 10px 10px !important;
+            .col-one {
+                margin-left: -30px;
+                padding-top: 15px;
+                &.top-padding {
+                    padding-top: 20px;
+                    padding-left: 50px;
+                }
+            }
+            .col-two {
+                padding-left: 50px;
+                padding-top: 15px;
+                border-left: 1px solid $near-black;
+            }
+            p {
+                font-size: $font-normal;
+                color: #fff;
+                padding-left: 0px;
+                padding-right: 40px;
+                &:first-of-type {
+                    padding-top: 5px;
+                }
+                &:last-of-type {
+                    padding-top: 5px;
+                    padding-bottom: 0px;
+                }
+            }
+            p > ul {
+                padding-bottom: 5px;
+            }
+            p:last-child > a {
+                font-size: $font-normal;
+                color: $near-black;
+                padding-top: 5px;
+                text-decoration: underline;
+                display: block;
+                &:hover {
+                    text-decoration: underline;
+                    text-align: left;
+                    background: $grey-hover;
+                }
+                &:last-child {
+                    //padding-bottom: 30px;
+                }
+            }
+            p a {
+                display: inline-block;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: underline;
+                    background: $grey-hover;
+                }
+            }
+            h3 {
+                padding-left: 0px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                padding-top: 0;
+                margin-top: 5px;
+                color: $near-black;
+            }
+            sup {
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 0px;
+                padding-bottom: 5px;
+            }
+            sup:first-of-type {
+                padding-top: 10px;
+                padding-bottom: 5px;
+                margin-bottom: 0px;
+            }
+            sup.trademark {
+                display: inline !important;
+                line-height: inherit !important;
+                position: inherit !important;
+                //vertical-align: sub !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                font-size: 24px !important;
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+            span a {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: underline;
+                    background: $grey-hover;
+                }
+            }
+            > ul {
+                font-size: 16px;
+                color: #201d1d;
+                padding-left: 82px;
+                padding-right: 90px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                > li {
+                    @include list-normal;
+                    margin-left: 0px;
+                    &:hover {
+                        color: transparent;
+                        cursor: default;
+                    }
+                    a {
+                        @include list-normal;
+                        margin-left: 0px;
+                        padding-left: 0;
+                        &:hover {
+                            background: $grey-hover;
+                            cursor: pointer;
+                        }
+                    }
+                    > ul {
+                        font-size: 16px;
+                        color: #201d1d;
+                        padding-left: 20px;
+                        padding-right: 40px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        li {
+                            @include list-normal;
+                            margin-left: 10px;
+                            padding-left: 0;
+                            &:hover {
+                                color: transparent;
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+            }
+            ul ~ p:last-child {
+                padding-top: 0;
+                margin-top: -10px;
+            }
+            button:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    i.fa.ifb-open-panel,
+    i.fa.ifb-open-panel.open {
+        width: 50px;
+    }
+}

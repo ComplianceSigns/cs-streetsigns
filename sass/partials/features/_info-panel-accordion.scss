@@ -1,0 +1,111 @@
+/* ---------------- InfoPanel Home Page Accordion ---------------- */
+//based on accordion.scss
+
+.container-info-panel {
+    .full-width div.row > div {
+        padding-top: 10px;
+        padding-right: 0;
+    }
+    #InfoPanel {
+        margin-top:0;
+        background-image: url("../../assets/images/wood.png");
+        .list-group:last-of-type {
+            margin-bottom:0;
+        }
+        div.panel.panel-default {
+            border-bottom: 1px solid #ffffff;
+        }
+         //plus - closed icons
+	    .ifb-open-panel:before {
+	        @include ifb-accord-closed-variant (104px, $ifb-accord-icon-closed, $near-black, 72px, 72px, $ifb-accord-icon-padding);
+	        &:hover {
+	        }
+	    }
+	    //minus - open icons
+	    .ifb-open-panel.open:before {
+			@include ifb-accord-open-variant (104px, $ifb-accord-icon-open, $near-black, 72px, 72px, $ifb-accord-icon-padding); 
+			&:hover {
+	        }
+	    }
+	    .row.openable-info {
+	        display:none;
+			  padding-left: 70px;
+	        .ifb-panel-subtitle {
+            	padding-left: 20px;
+            }
+            .input-group, .input-group-btn {
+            	display:block;
+            	float:left;
+            }
+            .input-group {
+            	display: table;
+            	padding-right: 10px;
+            }
+            .form-control {
+            	display:table-cell;
+            }
+			span.input-group-addon {
+			  background-color: white;
+			  border-radius: 0;
+			  border: 0;
+			  box-shadow: none;
+			}
+        }
+        .row.openable-info.open {
+        	display: block;
+        }
+        .panel {
+        	margin-bottom:0;
+            &.panel-default {
+                //border-radius: 0;
+                min-height: 130px;	
+            }
+            &:last {
+                margin-bottom:20px;
+            }
+            .collapsable-info {
+            	padding-top:30px;
+            	padding-bottom:20px;
+            	display:block;
+            	h5 {
+            		font-size: $font-normal;
+            		color:#fff;
+            	}
+            	a {
+            		font-size: $font-normal ;
+            		color:$near-black;
+            		text-decoration:none;
+                    @include hfont-med;
+	            	&:hover {
+                        text-decoration:underline;
+	            		
+	            	}
+            	}
+            	&.open {
+            		display:none;
+            	}
+            }
+        }
+        >.row .row {
+            margin-right: -30px;
+        }
+        a.list-group-item {
+	        @include accord-a-list-group-item-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, #fff);
+	        &.list-group-item-success {
+				@include accord-a-list-group-item-success-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, $list-group-item-color-collapsed);
+				font-size: 50px;
+                padding: 0 15px 5px 49px;
+                @include hfont-reg;
+                &.collapsed {
+					color: #fff;
+					&:hover {
+						color:$near-black;
+					}
+				}
+                span {
+                    top:-18px;
+                }
+			}
+	    }
+    }
+}

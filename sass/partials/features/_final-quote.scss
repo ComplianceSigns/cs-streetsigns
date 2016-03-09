@@ -1,0 +1,115 @@
+.quote-results-table thead {
+	background-color:#E0E4E8;
+}
+.quote-results-table th:last-child, .quote-results-table td:last-child {
+	text-align: right;
+}
+.quote-results-table th:first-child, .quote-results-table td:first-child {
+	text-align: left;
+}
+.quote-results-table th, .quote-results-table td {
+	text-align: center;
+}
+.quote-results-table .table > thead > tr > th {
+	padding: 0px 10px;
+}
+.final-quote h3, .final-quote h1 {
+	color: black;
+}
+.final-quote h3, .final-quote h4, .final-quote h1 {
+	font-weight: normal;
+	padding-top: 5px;
+}
+.monthly-summary h4 {
+	color: white;
+}
+.quote-header {
+	border-bottom: 1px solid #484747;
+}
+.quote-results-table .table > tbody > tr > td {
+	padding: 10px 20px;
+	border-bottom: 1px solid $border-color;
+}
+.monthly-summary {
+	background-color: #282828;
+	padding: 5px 20px 0px 20px;
+}
+.quote-month-amount {
+	font-size: 72px;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 25px;
+	font-family: 'din_lightregular';
+}
+.quote-amount-list {
+	color: white;
+	font-weight: normal;
+	text-align: right;
+}
+.quote-amount-list div {
+	border-bottom: 1px solid #484747;
+	padding: 10px 0;
+	label{
+		margin: 0px;
+		font-weight: normal;
+		font-size: 16px;
+	}
+}
+.quote-amount-list div:last-child {
+	border: none;
+}
+.purchase-link {
+	color:white;
+	background: #000;
+	width: 100%;
+}
+
+.updateQuote {
+	background-color: #53A5F9;
+	padding: 15px;
+	text-align: center;
+}
+.fine-print {
+	background-color: #000;
+	padding: 15px;
+	float: left;
+}
+div.asterisk:before {
+	content: "*";
+	color: red;
+}
+.final-quote a {
+	color: #639AD1;
+}
+.table-select{
+	padding: 12px 10px 8px 10px;
+ 	border: 1px solid #ddd;
+	font-size: 16px;
+  	color: #7b7b7b;
+  	font-weight: normal;
+  	width: 100%;
+}
+.quote-table {
+	padding: 0 10px;
+	div{
+		background: #eee;
+	}
+	div:nth-of-type(2n){
+		background: #ccc;
+	}
+}
+.quote-table-head{
+	background: #e0e4e8;
+	padding: 4px 10px;
+}
+.table-odd {
+	background: #f9f9f9;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e6e9ec;
+}
+.table-even {
+	background: #fff;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e6e9ec;
+}

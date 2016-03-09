@@ -1,0 +1,75 @@
+/* ----------------------- # Drivers :  itemcontrol bus new driver ----------------------- */
+
+.driver {
+    background: $primary-color url("../assets/images/large_icons/drivers/driver.png") 30px 28px no-repeat;
+	width: 100%;
+	padding: 80px 0;
+	margin: 0px;
+	max-width: 100%;
+}
+.driver-right{ 
+	width: 510px !important;
+}
+.item-block.newDriver {
+	h3 {
+	    font-size: 40px;
+	    padding: 0;
+	    margin: 44px 25px 25px 50px;
+	}
+}
+
+/* ----------------------- # Drivers :  driver selected, driver row disabled ----------------------- */
+
+div.driver-indicator {
+	h5 {
+	    text-align: center;
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #656565;
+	    padding: 2px;
+	    margin: 0;
+	}
+}
+.driver-selected {
+    div.driver-indicator {
+	    h5 {
+	        color: #5d9cec;
+	    }
+    }
+    .item-block h3 {
+        color: #292929;
+    }
+    >.row {
+        border: 1px solid rgb(93, 156, 236);
+    }
+    .driver {
+	    background: $primary-color url("../assets/images/large_icons/drivers/driver.png") 30px 28px no-repeat;
+	}
+}
+.row.drivers-disabled {
+    .questions-container {
+        display: none;
+    }
+    div.driver-indicator {
+	    h5 {
+	        color: #CBCBCB;
+	    }
+    }
+    .item-block {
+	    h3 {
+	        color: #CBCBCB;
+	    }
+    }
+    > .row {
+        border: none;
+        box-shadow: none;
+    }
+    .driver {
+        background: $alt-grey url("../assets/images/large_icons/drivers/driver_alt.png") 30px 5px no-repeat;
+		width: 100%;
+		padding: 30px 0;
+		margin: 0px;
+		height: 66px;
+		max-width: 100%;
+    }
+}

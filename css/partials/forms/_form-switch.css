@@ -1,0 +1,150 @@
+/* ---------------- # Forms: On/Off switch extended from checkbox switch ---------------- */
+.switch {
+  position: absolute;
+  margin-top: 2px;
+}
+
+.switch .form-control {
+  padding-top: 7px;
+  margin-bottom: 0;
+}
+
+.switch * {
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.switch span {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  transition: all .5s;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.switch span:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 400px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .2s;
+}
+
+.switch input:checked + span {
+  background-color: #63b830;
+  border-color: #63b830;
+  transition: all .5s;
+  z-index: 1;
+}
+
+.switch input:checked + span:after {
+  left: 81%;
+  transition: all .2s;
+  border-radius: 0px;
+}
+
+.switch.switch-lg span {
+  width: 80px;
+  height: 40px;
+  border-radius: 0px;
+}
+
+.switch input:checked + span:before {
+  content: "Yes";
+  padding: 12px;
+  position: relative;
+  top: 4px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.switch.switch-lg span:after {
+  height: 38px;
+  width: 15px;
+  z-index: 2;
+  border: 0px none;
+}
+
+.switch div:after {
+  content: "No";
+  position: relative;
+  transition: all .9s;
+  padding: 12px;
+  top: -41px;
+  left: 15px;
+  z-index: 0;
+  color: #CBCECF;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.switch span:after {
+  border-radius: 0px;
+}
+
+.big-input {
+  display: block;
+  width: 60%;
+  position: relative;
+  height: 46px;
+  text-align: left;
+}
+
+.big-input .switch {
+  margin-bottom: 20px;
+}
+
+.big-input label, .big-input input {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.big-input label.switch {
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-top: -5px;
+}
+
+.big-input input {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dde6e9;
+  min-width: 250px;
+  background-image: none;
+  border-radius: 0px !important;
+  height: 40px;
+}
+
+.big-input select {
+  min-width: 250px;
+  background-image: none;
+  border: 1px solid #dde6e9;
+  border-radius: 0px !important;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  height: 40px;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+}

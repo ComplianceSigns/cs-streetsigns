@@ -1,0 +1,86 @@
+/* ---------------- # Sidebar: Sidebar quotebuilder and widgets panel ---------------- */
+
+.sidebar-list {
+	ul{
+		padding:0px; 
+		margin:0px;
+		li{
+			list-style:none;
+			line-height:52px;
+			color:$primary-color;
+			font-size: $standard-font;
+			border-bottom:1px solid $border-color;
+			background:url(../assets/images/bullets/bullet.png) no-repeat left;
+			padding-left:45px;
+			a{
+				&:hover{
+					color: $link-active;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+	
+	.panel-group {
+		.panel{
+			border-radius:0px !important;
+		}
+	}
+}	
+.panel-heading{
+	padding:0px;
+}
+.panel-group{
+	margin-top: 30px;
+}
+.panel.panel-default {
+	border-top-width: 0px;
+	border-color: $border-color;
+}
+
+/* ---------------- # Sidebar: Quote builder ---------------- */
+
+.quote-builder-container {
+	padding: 0px;
+	height: auto;
+	display: block;
+	background: #fff;
+	color: #333;
+	margin-left: 1px;
+	margin-top:0px;
+}
+.quote-builder-container h3, .panel-title {
+	margin: 0px;
+	background: #e6e9ec;
+	padding: 15px 15px 10px 15px;
+	font-size: $title-normal;
+	font-family: $heading-font;
+	color: $primary-color;
+	text-transform: uppercase;
+}
+.quote-builder-container{
+	h4 {
+		margin: 0px;
+		padding: 20px 15px 15px 15px;
+		font-size: 24px;
+		font-family: $heading-font;
+		color: $primary-color;
+		text-align:center;
+		border-top: 1px solid $border-color;
+	}
+}
+.quote-builder-container {
+	p {
+	    font-size: 12px;
+	    margin:0px;
+	    text-align: center;
+	}
+}
+
+/* ---------------- # Sidebar: Quote Summary p tag element ---------------- */
+
+.customer-info{
+	p{
+		padding:0px 0 10px 0;
+	}
+}

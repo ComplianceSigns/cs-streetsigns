@@ -1,0 +1,62 @@
+/*  ----------------------------  BUTTONS  -----------------------------   */
+
+
+/*  much of the real button code is created in mixins  */
+
+.cs-main {
+    /* ---------------- # Buttons: CSG Street Sign Generator buttons ---------------- */
+    //btn-group controls regular border, background colors, font size, font-family, block layout of label, color of label.
+    .btn-group {
+        @include button-group-controls-csg ($light-grey, $button-bkg-color, 12px, $button-height-lg, $button-text, $label-layout, $label-grey);
+        button {
+            border: 1px solid $button-grp-bkg;
+        }
+        .cs-btn-color-blue {
+            @include cs-btn-colored ($cs-btn-color-blue);
+        }
+        .cs-btn-color-white {
+            @include cs-btn-colored ($cs-btn-color-white);
+        }
+        .cs-btn-color-green {
+            @include cs-btn-colored ($cs-btn-color-green);
+        }
+        .cs-btn-color-brown {
+            @include cs-btn-colored ($cs-btn-color-brown);
+        }
+    }
+    /* Button Containers / designating number of buttons that fill the full width */
+    .cs-btn-two-Bu {
+        @include label-padding;
+        button {
+            width: 50%;
+        }
+    }
+    .cs-btn-three-Bu {
+        @include label-padding;
+        button {
+            width: 33.33333%;
+        }
+    }
+    .cs-btn-four-Bu {
+        @include label-padding;
+        button {
+            width: 25%;
+        }
+    }
+    .cs-btn-borders {
+        border: 2px solid #ffffff;
+    }
+    /* ---------------- # Buttons: CSG Street Sign Generator buttons - dIMMED MEDIUM PREVIEW, SAVE, RETRIEVE ETC---------------- */
+    .cs-btn-dimmed {
+        @include button-group-dimmed-csg ($button-dimm-border-color, $button-dimm-bkg-color, 12px, $button-height, $label-grey, $label-color, $label-text-size, $label-layout);
+        button {
+            padding: 4px 12px;
+            font-size: 12px;
+        }
+    }
+    .cs-csg3-form-inline {
+        label {
+            @include label-standard-stuff;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+/* ---------------- # Variables: ---------------- */
+$fa-font-path: "../assets/fonts";
+
+$background-beige:   #ececec;
+$background-lt-blue-grey: #e3e3e3;
+$background-med-blue-grey: #c7c7c7;
+$font-getQuote: 52px;
+$font-giant-icon:90px;
+$font-giant:30px;
+
+$font-giant-icon-mobile : 56px;
+$font-giant-mobile : 30px;
+
+$font-big: 22px;
+$font-menu: 14px;
+$font-normal: 16px;
+$font-din: din_lightregular;
+$font-color-dark: #000000;
+
+
+//$red: 							#ee2e24;				/* # This wasn't provided from Y&L */
+$button-background: 			$red;
+
+//== Buttons from Bootstrap, needed maybe for some of the variables we are using
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal !default;
+
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $red !default;
+$btn-primary-border:             #ffffff !default;
+
+$primary-btn: $near-black;
+
+$bullet-normal: square;
+
+
+
+
+

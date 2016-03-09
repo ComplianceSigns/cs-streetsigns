@@ -1,0 +1,258 @@
+/* ---------------- Typography: Custom font family ---------------- */
+//CUSTOM FONT Usage:  in any class, add '@include hfont-lt;', '@include hfont-reg; '@include hfont-med;', @include hfont-bold; etc into any selector
+//below is a section of test html and classes to confirm that the font is working
+/*---------------- Typography: HOSTED: Custom font family, DIN ---------------- */
+
+@import url("http://fast.Fonts.net/t/1.css?apiType=css&projectid=1b1b60c1-c56a-45c6-a9b5-03ac3c306ea3");
+
+@mixin hfont-lt {
+    font-family: 'DIN Next W01';
+    font-weight: 200;
+}
+
+@mixin hfont-reg {
+    font-family: 'DIN Next W01';
+    font-weight: 400;
+}
+
+@mixin hfont-med {
+    font-family: 'DIN Next W01';
+    font-weight: 500;
+}
+
+@mixin hfont-bold {
+    font-family: 'DIN Next W01';
+    font-weight: 700;
+}
+@mixin bfont {
+    font-family: 'Arial, Helvetica, sans-serif, sans-serif';
+}
+
+/* Typography Test:  test classes for your typography  ---- 
+//html block
+<div class="ftest-hfont-lt">This should be the din light Font</div>
+<div class="ftest-hfont-reg">This should be the din regular Font</div>
+<div class="ftest-hfont-med">This should be the din medium Font</div>
+<div class="ftest-hfont-bold">This should be the din bold Font</div>
+*/
+.ftest-hfont-lt {
+	font-size: 24px;
+	@include hfont-lt;
+}
+.ftest-hfont-reg {
+	font-size: 24px;
+	@include hfont-reg;
+}
+.ftest-hfont-med {
+	font-size: 24px;
+	@include hfont-med;
+}
+.ftest-hfont-bold {
+	font-size: 24px;
+	@include hfont-bold;
+}
+/* ---------------- Typography: General Hover Style for most elements ---------------- */
+/* @mixin regular-hover {
+    background:
+} */
+
+/* ---------------- Typography: FALLBACK LOCAL: Custom font family, DIN ---------------- */
+
+@font-face {
+    font-family: "DIN Next W01_n2";
+    src: url("../../assets/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "DIN Next W01";
+    src: url("../../assets/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix");
+    src: url("../../assets/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("../../assets/fonts/de1216be-00c2-43c0-9c45-3e7f925eb519.woff2") format("woff2"), url("../../assets/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("../../assets/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("../../assets/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Next W01_n4";
+    src: url("../../assets/fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "DIN Next W01";
+    src: url("../../assets/fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix");
+    src: url("../../assets/fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix") format("eot"), url("../../assets/fonts/44e7b0fa-6c8d-43c2-b19e-f1e3ce9ea57c.woff2") format("woff2"), url("../../assets/fonts/c5a7f89e-15b6-49a9-8259-5ea665e72191.woff") format("woff"), url("../../assets/fonts/868c94b5-ca49-46b7-b62b-297f8d861125.ttf") format("truetype"), url("../../assets/fonts/e3145f65-29b5-4f7f-8c6e-2dc135021b6a.svg#e3145f65-29b5-4f7f-8c6e-2dc135021b6a") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Next W01_n5";
+    src: url("../../assets/fonts/324dee78-6585-4c13-8ca3-5817cc600d84.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "DIN Next W01";
+    src: url("../../assets/fonts/324dee78-6585-4c13-8ca3-5817cc600d84.eot?#iefix");
+    src: url("../../assets/fonts/324dee78-6585-4c13-8ca3-5817cc600d84.eot?#iefix") format("eot"), url("../../assets/fonts/be607c9f-3c81-41b4-b7ad-17af005c80bb.woff2") format("woff2"), url("../../assets/fonts/4bf0ead4-e61b-4992-832b-6ff05828d99f.woff") format("woff"), url("../../assets/fonts/73713a0b-8f6a-4c4e-b8a8-7cf238e632f6.ttf") format("truetype"), url("../../assets/fonts/b90b6bdf-15e2-4544-9fe0-92c79fff0ecd.svg#b90b6bdf-15e2-4544-9fe0-92c79fff0ecd") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN Next W01_n7";
+    src: url("../../assets/fonts/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "DIN Next W01";
+    src: url("../../assets/fonts/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix");
+    src: url("../../assets/fonts/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix") format("eot"), url("../../assets/fonts/121784c1-863c-4e49-b682-625ea7de55b0.woff2") format("woff2"), url("../../assets/fonts/9949035f-6226-4080-a14a-bf7d94ffb1e1.woff") format("woff"), url("../../assets/fonts/6241bd09-15c2-485e-9796-9db8d0aa6974.ttf") format("truetype"), url("../../assets/fonts/af94da3e-4232-416a-b6bc-f39f85dd5db6.svg#af94da3e-4232-416a-b6bc-f39f85dd5db6") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+//original font reference, incomplete list
+/* @font-face {
+    font-family: 'din_lightregular';
+    src: url('../../assets/../../assets/fonts/DIN-Light-webfont.eot');
+    src: url('../../assets/../../assets/fonts/DIN-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/../../assets/fonts/DIN-Light-webfont.woff2') format('woff2'), url('../../assets/../../assets/fonts/DIN-Light-webfont.woff') format('woff'), url('../../assets/../../assets/fonts/DIN-Light-webfont.ttf') format('truetype'), url('../../assets/../../assets/fonts/DIN-Light-webfont.svg#din_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 
+/* ---------------- Typography: HTML tag elelmets ---------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $heading-font;
+    font-weight: 500;
+}
+
+h2,
+.h2 {
+    font-size: $title-large;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+p,
+li {
+    //font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: "DIN Next W01";
+    font-weight: 400;
+    color: $primary-color;
+    font-size: $font-normal;
+}
+sup {
+    //font-size: 12px;
+    font-size: $font-normal - 4 !important;
+    color: $near-black;
+    line-height: inherit;
+    position: inherit;
+    vertical-align: baseline;
+    display: block;
+    padding-top: 0;
+    &:first-of-type {
+        padding-top:0px;
+    }
+    &:last-of-type {
+          padding-top: 10px;
+          padding-bottom: 20px;
+    }
+    &:hover {
+        text-decoration:none !important;
+    }
+}
+
+ sup.trademark {
+  display: inline !important;
+  line-height: inherit !important;
+  position: inherit !important;
+  //vertical-align: sub !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 24px !important;
+    &:hover {
+        text-decoration:none !important;
+    }
+}
+/* ---------------- Typography: Font-awesome ---------------- */
+
+.fa-circle {
+    display: none;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li:hover {
+    text-decoration: none;
+    color: #e1261c;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    color: $grey;
+    font-style:normal;
+    @include hfont-reg;
+    font-size: $font-normal + 1;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+}
+
+.form-control::-moz-placeholder {
+    color: $grey;
+    opacity: 1;
+    font-style:normal;
+    @include hfont-reg;
+    font-size: $font-normal+1;
+
+}
+
+.form-control:-ms-input-placeholder {
+    color: $grey;
+    font-style:normal;
+    @include hfont-reg;
+    font-size: $font-normal+1;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: $grey;
+    font-style:normal;
+    @include hfont-reg;
+    font-size: $font-normal+1;
+}
+select {
+  color: $grey;
+    font-style:normal;
+    @include hfont-reg;
+    font-size: $font-normal+1;
+}
+

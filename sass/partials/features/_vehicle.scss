@@ -1,0 +1,103 @@
+/* -----------------------  # Vehicles: legend ----------------------- */
+legend {
+  margin-bottom: 10px !important;
+}
+
+/* ----------------------- # Vehicle : disabled Vehicle row ----------------------- */
+
+.vehicle-disabled, .vehicle-disabled .form-control, .vehicle-disabled body .bootstrap-tagsinput, body .vehicle-disabled .bootstrap-tagsinput {
+background-color: #ffffff !important;
+border: none;
+}
+
+.vehicle-disabled {
+	.type-indicator {
+	  width: 120px;
+	  height: 54px;
+	  margin-bottom: 5px;
+	}
+	.car {
+		  background: $alt-grey url("../assets/images/large_icons/vehicles/car_alt.png") 25px 5px no-repeat;
+		  width: 100%;
+		  padding: 30px 0;
+		  margin: 0px;
+		  max-width: 100%;
+	}
+	.item-block h3 {
+	  color: #CBCBCB;
+	}
+	> .row {
+		border: none;
+  		box-shadow: none;
+	}
+	
+	div.row.questions-container {
+		display:none;
+	}
+}
+
+div.vehicle-disabled .remove-button {
+    display:none;
+} 
+.vehicle-disabled, .vehicle-disabled .form-control {
+    background-color: grey;
+}
+
+/* ---------------------- # Vehicle : Question styling  ---------- */
+
+#lienholder textarea.form-control {
+   padding: 5px 20px 5px 55px;
+}
+
+form#validateVinForm h3{
+	color:#fff;
+	text-transform: uppercase;
+	margin-top:0px;
+}
+#addVehicleForm {
+    padding: 20px;
+    background: $primary-color;
+    margin-top: 10px;
+}
+
+form#ValidateVinForm{
+	&.alert-warning{
+		margin-bottom:0px;
+	}
+}
+.vehicle-op{
+	margin-right: -25px;
+  	width: 50%;
+  	min-width: 240px;
+ }
+.pop-box{
+	background: #eee;
+	padding: 10px !important;
+	min-width: 505px;
+}
+.pop-box-driver{
+	background: #eee;
+	padding: 0 20px !important;
+	min-width: 505px;
+	margin-top: 10px;
+}
+.pop-box-quote{
+	background: #eee;
+	padding: 0px 10px !important;
+	min-width: 505px;
+	margin-bottom: 5px;
+}
+.submit-vehicle{
+	margin-top: 27px !important;
+}
+
+/* ---------------------- # Vehicle :  VIN widget ---------------------- */
+
+form#validateVinForm {
+    padding: 20px;
+    background: $primary-color;
+}
+.VIN-input-btn-wrap{
+	background:#fff;
+	padding:0px;
+}

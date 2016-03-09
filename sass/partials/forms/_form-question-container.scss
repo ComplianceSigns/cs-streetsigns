@@ -1,0 +1,43 @@
+/* ---------------- # Forms : Question container ---------------- */
+
+.questions-container.label-first {
+    width: $full-width;
+    text-align: left;
+    margin:0px;
+}
+.questions-container {
+	textarea{
+		width:$full-width; 
+		border:1px solid $border-color; 
+		background:#f0f0f0; 
+		padding:10px; 
+		color:#7b7b7b; 
+		font-style:italic; 
+		max-height:120px; 
+		min-height:85px;
+		padding:5px 15px;
+	}
+}
+.row{
+	&.questions-container {
+		padding-bottom: 0px;
+    	margin: 0px;
+		.col-sm-12 {
+			padding:0px;
+		}
+	}	
+}
+
+.item-controls-bus {
+	margin-right:20px;
+	.row {
+	  padding: 0;
+	}
+}
+.item-controls-bus {
+	height: 100%;
+	vertical-align: top;
+	.row {
+	    padding: 4px 0;
+	}
+}

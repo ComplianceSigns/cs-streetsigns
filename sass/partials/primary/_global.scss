@@ -1,0 +1,83 @@
+/* ---------------- # Primary Sass File : Global tag elements and Main containers ---------------- */
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    overflow-x:hidden
+}
+body,
+html {
+    background: $page-bg-color;
+}
+hr {
+    border-top: 1px solid $border-color;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a {
+    color: $near-black;
+    outline: 0 !important;
+    text-decoration: underline;
+    &:hover {
+        color: $near-black;
+        text-decoration: underline;
+        outline: 0 !important;
+        background: $grey-hover;
+    }
+    &.ifb-link {
+        display: inline-block !important;
+    }
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: $max-page-width;
+    background: $panel-color;
+}
+.container-fluid {
+    > .row {
+        margin-left: -15px;
+        margin-right: -15px;
+        background: $panel-color;
+    }
+}
+.row.row-fix > [class^="col-"]:first-child,
+.row.row-fix > [class*=" col-"]:first-child {
+    padding-left: 0;
+}
+.row.row-fix > [class^="col-xs-12"]:first-child,
+.row.row-fix > [class*=" col-xs-12"]:first-child {
+    padding-left: 0;
+    padding-right: 0;
+}
+.section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.section-first {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.section-last {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.container-fluid {
+    max-width: auto !important;
+}
+.page-content {
+    padding: 20px;
+    border-radius: 0px !important;
+}
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+}

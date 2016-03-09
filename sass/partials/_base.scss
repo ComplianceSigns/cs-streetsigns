@@ -1,0 +1,33 @@
+/* ---------------- # OAS + Bootstrap - imports for all mixins + global project variables ---------------- */
+@import "modules/colors";							/* All Color Variables */
+//@import "bootstrap/bootstrap";					/* # Complete Bootstrap */
+@import "modules/all"; 						/* # All Modules */
+@import "modules/functions"; 						/* # All Functions */
+
+@import "buttons2";								/* # All Buttons */
+// @import "layout";								/* # layout utilities to set margins, paddings and widths */
+// @import "tooltip";								/* # Tooltip */
+// @import "accordion";							/* # All Accordions Master classes */
+
+// @import "primary/global";						/* # Common/Global structure  */
+// @import "primary/header";						/* # Primary : Header classes */
+// @import "primary/mainMenu";						/* # Primary : mainMenu classes */
+// @import "primary/footer";						/* # Primary : Footer classes */
+// @import "primary/repeatable-containers";		/* # Primary : Repeating container */
+// @import "primary/mobile";						/* # Primary : mobile layout media queries */
+
+// @import "forms/form-common";					/* # Common form tags and classes */
+@import "forms/form-inputs";					/* # Form input classes */
+// @import "forms/form-question-container";		/* # Form question container classes */
+// @import "forms/form-switch";					/* # Form checkbox switch for Final details page */
+// @import "forms/form-custom";					/* # Form custom classes */
+// @import "forms/mini-form";						/* # Reusable mini form  */
+
+// @import "indicators";							/* # Type indicators */
+// @import "features/wizard";						/* # Navigation Wizard */
+
+
+// @import "sidebar";								/* # Sidebar - quote builder and widgets */
+// @import "social-media";							/* # Social media elements */
+
+// @import "primary/mediaQueryOverrides";			/* # Primary : sm, md lg layout media queries */

@@ -1,0 +1,136 @@
+/* ---------------- Media Queries: ---------------- */
+/* ----------------  Small ---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    input.form-control.input-lg {
+        height: 34px;
+    }
+    .container-call-to-action .getQuote>div>div+div {
+        margin: 0;
+        padding: 10px 5px 10px 0;
+    }
+    .container-call-to-action .getQuote h1 {
+        font-size: 21px;
+    }
+    .container-article-panel {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    #accordion-info-accordion2 { 
+        
+    }
+    .section-details-accordion #section-details-accordion .page-content {
+        h3 {    
+            padding-left: 110px ;
+            text-transform: uppercase;
+        }
+        > ul {
+          font-size: 16px;
+            li {
+                @include list-normal;
+                margin-left: 50px ;
+                > ul li{
+                    @include list-normal;
+                    margin-left: 0px ;
+                }
+            }
+        }
+    }
+    .ifb-call-to-action {
+        h1 {
+            padding-top: 1% !important;
+            font-size: $font-getQuote - 25 !important;
+        }
+        .getQuote input.form-control.input-lg {
+            height:34px;
+        }
+        button.btn.btn-default.dropdown-toggle {
+            height: 34px;
+        }
+        button[type=submit] {
+            height: 34px;
+        }
+        .soc-med-tag a {
+          font-size: 14px !important;
+        }
+    }
+}
+/* ---------------- Small and Medium and ---------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+    .container.container-fluid {
+        width: 100%;
+    }
+    .ifb-open-panel:before {
+        font-size: 35px;
+    }
+    .panel.panel-default {
+        min-height: 115px;
+    }
+    .section-details-accordion #section-details-accordion .container-info-panel .panel-group .panel.panel-default {
+        min-height: inherit;
+    }
+    .panel.panel-default {
+        min-height: inherit;
+    }
+    .panel-group .panel>.panel-heading .panel-title a {
+       
+    }
+}/* ---------------small end of small ------ */
+
+@media screen and (min-width: 852px) and (max-width: 992px) {
+    .container-article-panel {
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
+/* ---------------smallest end of small ------ */
+
+@media screen and (min-width: 820px) and (max-width: 851px) {
+    .ifb-call-to-action {
+        h1 {
+            padding-top: 4% !important;
+            font-size: $font-getQuote - 25 !important;
+        }
+    }
+}
+/* ----------------  Medium ---------------- */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container-article-panel {
+        h2 {
+           // font-size: 38px;
+        }
+    }
+    .ifb-call-to-action {
+        h1 {
+            padding-top: 4% !important;
+            font-size: $font-getQuote - 9 !important;
+        }
+        .getQuote input.form-control.input-lg {
+            height:34px;
+        }
+        button.btn.btn-default.dropdown-toggle {
+            height: 34px;
+        }
+        button[type=submit] {
+            height: 34px;
+        }
+
+    }
+}
+/* ---------------- large ---------------- */
+
+@media screen and (min-width: 1200) {
+    .container {
+        width: 1170px;
+    }
+    .container.container-fluid {
+        width: 1170px;
+    }
+}

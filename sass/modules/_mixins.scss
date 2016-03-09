@@ -1,0 +1,159 @@
+
+/* ---------------- Accordion variants: .panel-group (parent level of accordian) ---------------- */
+@mixin accord-panel-group-variant ($accord-width, $accord-margin, $accord-padding, $accord-background, $accord-outline, $accord-border-left, $accord-border-right, $accord-border-top, $accord-border-bottom) {
+  width: $accord-width;
+  margin: $accord-margin;
+  padding: $accord-padding;
+  background: $accord-background;
+  outline: $accord-outline;
+}
+
+/* ---------------- Accordion variants: .panel ---------------- */
+@mixin accord-panel-variant ($accord-panel-margin-bottom,$accord-panel-border, $accord-panel-background ) {
+      margin-bottom: $accord-panel-margin-bottom;
+        @include panel-transparent;
+        background-color: $accord-panel-background;
+        border: $accord-panel-border;
+        box-shadow: none;
+        outline: -webkit-focus-ring-color none 0px;
+}
+
+/* ---------------- Accordion variants: closed indicators ---------------- */
+@mixin ifb-accord-closed-variant ($ifb-accord-icon-size, $ifb-accord-icon-closed, $ifb-accord-icon-closed-color, $ifb-accord-icon-height, $ifb-accord-icon-width, $ifb-accord-icon-padding) {
+    font-size: $ifb-accord-icon-size;
+    font-family: $ifb-accord-icon-font-family;
+    content: $ifb-accord-icon-closed;
+    color: $ifb-accord-icon-closed-color;
+    padding: $ifb-accord-icon-padding;
+}
+
+/* ---------------- Accordion variants: open indicators ---------------- */
+@mixin ifb-accord-open-variant ($ifb-accord-icon-size, $ifb-accord-icon-open, $ifb-accord-icon-open-color, $ifb-accord-icon-height, $ifb-accord-icon-width, $ifb-accord-icon-padding) {
+    font-size: $ifb-accord-icon-size;
+    font-family: $ifb-accord-icon-font-family;
+    content: $ifb-accord-icon-open;
+    color: $ifb-accord-icon-open-color;
+    padding: $ifb-accord-icon-padding;
+}
+
+/* ---------------- Accordion variants: .panel-title ---------------- */
+@mixin ifb-panel-title-variant ($accord-panel-title-margin, $accord-panel-title-padding, $accord-font-panel-title-size, $accord-font-panel-fontfamily, $accord-font-panel-color, $accord-a-color, $list-group-item-border) {
+    margin: $accord-panel-title-margin;
+    @include panel-transparent;
+    padding: $accord-panel-title-padding;
+    font-size: $accord-font-panel-title-size;
+    font-family: $accord-font-panel-fontfamily;
+    color: $accord-font-panel-color;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: $accord-a-color;
+        font-size: $accord-font-panel-title-size;
+        padding-left: $list-group-item-border;
+    }
+}
+
+/* ---------------- Accordion variants: .panel-body ---------------- */
+@mixin accord-panel-body-variant ($accord-panel-body-margin, $accord-panel-body-padding, $accord-panel-body-background-color, $accord-panel-body-border, $accord-panel-body-border-radius) {
+    margin: $accord-panel-body-margin;
+    padding: $accord-panel-body-padding;
+    background-color: $accord-panel-body-background-color;
+    border: $accord-panel-body-border;
+    border-radius: $accord-panel-body-border-radius;
+}
+
+/* ---------------- Accordion variants: .list-group-item ---------------- */
+@mixin accord-a-list-group-item-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, $list-group-item-color-collapsed) {
+    position: relative;
+    display: block;
+    padding: $list-group-item-padding;
+    margin: $list-group-item-margin;
+    background-color: $list-group-item-bkg-color;
+    border: $list-group-item-border;
+    font-size: $font-menu +2;
+    color: $list-group-item-color;
+    border-radius: $list-group-item-border-radius;
+    &:hover {
+        background-color: $list-group-item-bkg-color-hover;
+        color: $list-group-item-color-hover;
+    }
+}
+
+@mixin accord-a-list-group-item-success-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, $list-group-item-color-collapsed) {
+    position: relative;
+    display: block;
+    padding: $list-group-item-padding;
+    margin: $list-group-item-margin;
+    background-color: $list-group-item-bkg-color;
+    border: $list-group-item-border;
+    font-size: $font-menu +2;
+    color: $list-group-item-color;
+    border-radius: $list-group-item-border-radius;
+    &:hover {
+        background-color: $list-group-item-bkg-color-hover;
+        color: $list-group-item-color-hover;
+    }
+    &:collapsed {
+        background-color: $list-group-item-bkg-color-collapsed;
+        color: $list-group-item-color-collapsed;
+    }
+}
+
+
+/* ---------------- Accordion variants: general accordion utility mixin ---------------- */
+@mixin panel-transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* ---------------- Button variants:  ---------------- */
+@mixin button-variant($color, $button-background, $border) {
+    color: $color;
+    background-color: $button-background;
+    border-color: $border;
+    &:hover, &:focus, &.focus, &:active, &.active, .open > &.dropdown-toggle {
+        color: $color;
+        background-color: darken($button-background, 4%);
+        border-color: darken($border, 8%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &, &:hover, &:focus, &.focus, &:active, &.active {
+            background-color: $button-background;
+            border-color: $border;
+        }
+    }
+    .badge {
+        color: $button-background;
+        background-color: $color;
+    }
+}
+
+@mixin font-big-input {
+    font-style: normal !important;
+    color: $near-black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+}
+
+// Bullet list-group-item-font-size
+
+@mixin list-normal {
+    list-style-type: $bullet-normal;
+    list-style-position: inside;
+}
+

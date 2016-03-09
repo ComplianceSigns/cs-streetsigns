@@ -1,0 +1,90 @@
+/* ---------------- Accordion: Default Meta Styles ---------------- */
+
+
+.panel-group {
+    @include accord-panel-group-variant ($accord-width, $accord-margin, $accord-padding, $accord-background, $accord-outline, $accord-border-left, $accord-border-right, $accord-border-top, $accord-border-bottom);
+    .panel {
+        @include accord-panel-variant ($accord-panel-margin-bottom, $accord-panel-border, $accord-panel-background);
+        &>.panel-heading {
+            @include panel-transparent;
+            .panel-title {
+               @include ifb-panel-title-variant ($accord-panel-title-margin, $accord-panel-title-padding, $accord-font-panel-title-size, $accord-font-panel-fontfamily, $accord-font-panel-color, $accord-a-color, $list-group-item-border);
+                @include hfont-reg;
+
+            }
+        }
+        .ifb-panel-subtitle {
+            font-size: $font-normal + 4;
+            font-weight: bold;
+        }
+        .panel-body {
+            @include accord-panel-body-variant ($accord-panel-body-margin, $accord-panel-body-padding, $accord-panel-body-background-color, $accord-panel-body-border, $accord-panel-body-border-radius);
+            padding: 20px;
+            .ifb-panel-subsubtitle {
+                font-size: $font-normal - 4;
+                color: $near-black;
+                padding: 4px 0;
+            }
+            p {
+                font-size: $font-normal - 4;
+                color: #fff;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin: 0;
+                
+            }
+        }
+    }
+    i.fa.ifb-open-panel, i.fa.ifb-open-panel.open {
+      width: 50px;
+    }
+    //Main Menu only - plus - closed icons
+    .ifb-open-panel:before {
+        @include ifb-accord-closed-variant ($ifb-accord-icon-size, $ifb-accord-icon-closed, $ifb-accord-icon-closed-color, $ifb-accord-icon-height, $ifb-accord-icon-width, $ifb-accord-icon-padding);
+        span {
+                    padding: 0px 15px 0 0;
+                    font-size: 22px;
+                }
+    }
+    //Main Menu only - minus - open icons
+    .ifb-open-panel.open:before {
+        @include ifb-accord-open-variant ($ifb-accord-icon-size, $ifb-accord-icon-open, $ifb-accord-icon-open-color, $ifb-accord-icon-height, $ifb-accord-icon-width, $ifb-accord-icon-padding);
+        span {
+                    padding: 0px 15px 0 0;
+                    font-size: 22px;
+                }
+    }
+
+
+    //ACCORDION ICONS Plus and Minus -  General and Default
+
+     span.glyphicon.glyphicon-minus, span.glyphicon.glyphicon-plus {
+        font-size: 32px;
+        font-family: arial !important;
+        width: 25px;
+        //padding:0 15px 0 0;
+     }
+
+
+    .list-group-item {
+        background-color: $list-group-item-bkg-color;
+    }
+    a.list-group-item {
+        @include accord-a-list-group-item-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, $list-group-item-color-collapsed);
+        &:hover {
+            background-color: $list-group-item-bkg-color-hover;
+            color: $list-group-item-color-hover;
+        }
+        &.list-group-item-success {
+            @include accord-a-list-group-item-success-variant ($list-group-item-bkg-color, $list-group-item-bkg-color-hover, $list-group-item-color-hover, $list-group-item-border, $list-group-item-padding, $list-group-item-margin, $list-group-item-font-size, $list-group-item-color, $list-group-item-border-radius, $list-group-item-bkg-color-collapsed, $list-group-item-color-collapsed);
+            &.collapsed {
+                color: #fff;
+            }
+            span {
+                padding-left: 20px;
+                position: relative;
+                top: -7px;
+            }
+        }
+    }
+}

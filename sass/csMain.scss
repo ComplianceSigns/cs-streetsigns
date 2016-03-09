@@ -1,0 +1,29 @@
+
+
+
+.cs-main {
+		margin:0;
+		padding:0;
+	h1 { 
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+		padding:20px 8px 4px 8px;;
+		margin: 0;
+	}
+	h2 {
+		font-size: 22px;
+		font-weight: bold;
+		font-family: 'Roboto Condensed', sans-serif;
+		padding:0;
+		margin: 0px 8px 8px 8px;
+		color: $dark-green;
+		border-bottom: 1px solid $dark-green;
+	}
+	h3 {
+		font-size: 15px;
+		font-weight: medium;
+		font-family: 'Roboto Condensed', sans-serif;
+		color: $dark-green;
+	}
+}

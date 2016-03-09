@@ -1,0 +1,31 @@
+/* ---------------- # Article Pane : image and content sections -----------------  */
+#membershipImagesRow {
+  /*  height: auto;
+  //background-color: #eee;
+  white-space: nowrap;
+  width: 100%;
+  display: table; */
+}
+
+.membershipImage:first-child {
+  padding: 0 5px 10px 0;
+}
+
+.membershipImage:last-child {
+  padding: 0 0px 10px 0;
+}
+
+.membershipImage {
+  /* display: inline;
+  height: auto;
+  margin: 0;
+  width: auto;
+  vertical-align: middle;
+  padding: 0 5px 10px 5px;
+  display: table-cell; */
+}
+
+.container-article-panel .page-content {
+  padding: 10px 30px 30px 40px;
+  border-radius: 0px !important;
+}

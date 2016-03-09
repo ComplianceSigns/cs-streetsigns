@@ -1,0 +1,21 @@
+/* ====================================================================================
+   FAQ Content
+=======================================================================================*/
+.faq {
+  background: #c7c7c6;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.section.faq .row .col-md-2 .section #faq-topics-panel h4 {
+  color: #FFF;
+}
+
+.section.faq .row .col-md-2 .section #faq-topics-panel .panel-heading .panel-title {
+  background: #c7c7c6;
+}
+
+.section.faq .row .col-md-2 .section #faq-topics-panel h5 {
+  padding-left: 15px;
+  padding-right: 5px;
+}

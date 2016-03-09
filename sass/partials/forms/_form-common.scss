@@ -1,0 +1,119 @@
+/* ---------------- # Forms : Common form elements ---------------- */
+
+input[type="submit"] {
+  margin: 5px;
+}
+fieldset {
+	padding:0px;
+	margin-bottom: 10px;
+	border:0px none;
+}
+.question-inline {
+    display: inline;
+    padding: 20px 0px 20px 0px;
+	font-size: 17px;
+	font-weight: normal;
+}
+.question-row {
+	margin:0 0 0 20px !important;
+	border-bottom: 1px solid $border-color;
+	.c-radio {
+		padding: 22px 0 0 10px !important;
+	}
+}
+div.reveal-if-yes {
+    padding: 5px 20px 5px 55px;
+}
+.reveal-if-yes {
+    opacity: 1;
+}
+
+.dropdown-question-row {
+    padding: 5px 5px 0px 16px;
+    display: block;
+    label {
+        display: inline;
+        padding-top: 5px;
+    }
+}
+.form-horizontal {
+	.form-group {
+	    margin-left: 0 !important;
+	    margin-right: 0 !important;
+	}
+}
+.form-control {
+	box-shadow: 0 1px 1px $panel-trans inset;
+	border: 1px solid $border-color;
+	height: 42px;
+	border-radius:0px !important;
+	font-size: 14px;
+	font-style:italic;
+	color: #7b7b7b;
+}
+.form-group{
+	margin-bottom:5px;
+}
+.form-control, body .bootstrap-tagsinput {
+    display: block;
+}
+.form-horizontal {
+	.form-inline {
+	    padding: 5px 5px;
+	}
+}
+.form-horizontal {
+    .control-label {
+        text-align: left;
+        float: left;
+        font-size: 14px;
+        color:#292929;
+        font-weight:normal;
+        padding:0px;
+    }
+}
+form {
+	&.form-horizontal{
+		padding:0px;
+		form.form-horizontal .col-sm-12 {
+			padding:0px !important;
+		}
+	}
+}
+.form-inline .form-control, input.form-control {
+    width: $full-width;
+}
+.form-inline, .checkbox.form-inline {
+    display: inline-block;
+}
+.form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.radio-inline input[type="radio"]{
+	margin-left: -15px;
+}
+
+/* ---------------- # Forms:  Required and error Scss ---------------- */
+
+label.required:after {
+    content: "*";
+    color: red;
+}
+label.control-label {
+    padding-right: 0px;
+}
+.has-error {
+	select {
+	    border-color: red;
+	}
+}
+.has-error 
+.form-control, 
+.bootstrap-tagsinput {
+	-webkit-box-shadow: 0px 0px 6px #e15157 !important;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:  0px 0px 6px #e15157 !important;  /* Firefox 3.5 - 3.6 */
+	box-shadow:       0px 0px 6px #e15157 !important;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	border-color: #e15157 !important;
+}

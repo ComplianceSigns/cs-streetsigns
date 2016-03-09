@@ -1,0 +1,78 @@
+.term-title{ 
+	background: #bdc2c5;
+	padding: 5px 10px;
+	input[type="radio"] {
+		margin-top: 16px;
+		margin-right: 5px;
+	}
+	h4{
+		margin-top: 15px;
+	}
+}
+.term-payment-details{
+	background: $alt-grey;
+	padding: 20px;
+	min-height: 200px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	word-break: normal;
+	dt{
+		font-size: 16px;
+		font-weight: normal;
+		text-align: center;
+		padding:10px 0;
+	}
+	dd{
+		font-size: 36px;
+		text-align: center;
+		padding: 15px 0;
+		border-top: 1px solid #d1d6da;
+		border-bottom: 1px solid #d1d6da;
+		font-family: $heading-font;
+		font-weight: bold;
+	}
+}
+.term:hover, .term-select{
+	.term-title{ 
+		background: #000;
+		color: #fff;
+	}
+	.term-payment-details{
+		background: $primary-color;
+		color: #fff;
+	}
+}
+.label-info {
+	width: 100%;
+ 	padding: 4px;
+	text-align: center;
+}
+.payment-remain{
+	font-size: 24px !important;
+	font-family: $heading-font;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 0;
+	border-top: 0px none !important;
+	border-bottom: 0px none !important;
+}
+.payment-method {
+	border:1px solid $border-color;
+	padding: 0px;
+	margin: 10px 5px;
+	h3{
+		text-transform: uppercase;
+	}
+}
+.payment-optn{ 
+	border-left: 1px solid $border-color;
+	padding: 18px 15px 15px 15px;
+	span{
+		font-size: 16px;
+		font-weight: normal;
+		padding-left: 5px;
+	}
+	label{
+		margin-bottom: 0px;
+	}
+}

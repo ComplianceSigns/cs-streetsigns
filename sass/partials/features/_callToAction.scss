@@ -1,0 +1,266 @@
+/* -----------------------  # Call TO Action: (get Quote) ----------------------- */
+
+.ifb-call-to-action {
+    margin: 0px -15px 0 -15px;
+    overflow: hidden;
+    .getQuote {
+        padding: 0 0 0px 10px;
+        > div {
+            > div + div {
+                margin: 0;
+                padding: 10px 5px 26px 0;
+                margin: 0;
+                padding: 2% 5px 1% 0;
+            }
+        }
+        h1 {
+            padding: 0 !important;
+            font-size: $font-getQuote;
+            @include hfont-reg;
+            text-align: left;
+            color: #fff;
+            padding-top: 8%;
+        }
+        .row {
+            padding: 0px 8% 0px 8%;
+            margin-top: 0px;
+            margin-left: 0;
+        }
+        //Get a Quote Text and 
+        >.row:nth-of-type(1) {
+            background: #7b7b7b;
+            border-bottom: 10px solid #fff;
+            margin-left: -10px;
+            margin-right: 0px;
+        }
+        .row > .row {
+            padding: 0 !important;
+            margin-bottom: 15%;
+        }
+        .row + .row {
+            padding: 0 0 0 0;
+            margin-left: -30px;
+        }
+        //Social Media Block
+        >.row:nth-of-type(2) {}
+        .soc-med {
+            text-align: center;
+            a:hover {
+                color: lighten($near-black, 65);
+                background: transparent !important;
+            }
+        }
+        div.soc-med span.fa,
+        .soc-med-tag {
+            font-size: $font-big + 6;
+            color: #fff;
+            padding: 5px 5px 0 5px;
+            text-align: center;
+            &:hover {
+                color: lighten($near-black, 65);
+                background: transparent !important;
+            }
+        }
+        .soc-med-tag a {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 5px 5px 5px;
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: lighten($near-black, 65);
+                background: transparent !important;
+            }
+        }
+        input.form-control.input-lg {
+            height: 42px;
+        }
+        .input-group,
+        .input-group.input-lg {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 5px;
+            width: 100%;
+            margin: 0 auto !important;
+        }
+        .dropdown-menu {
+            background-color: rgba(255, 255, 255, 0.92);
+            width: 100%;
+        }
+        //>.row:first-child {
+        //   padding: 0px 30px 0px 30px;
+        // button.btn.btn-default.dropdown-toggle {
+        //     width: 85%;
+        //     height: 42px;
+        //     text-align: left;
+        //     margin-right: 5px;
+        //     @include font-big-input;
+        // }
+        // button[type=submit] {
+        //     height: 42px;
+        //     width: 15%;
+        //     padding: 0;
+        //     margin: 0 auto;
+        //     font-size: 17px;
+        //     font-weight: bold;
+        // }
+        // }
+    }
+    img.full-left {
+        padding-left: 0;
+        padding-right: 0;
+        border-right: 10px solid #fff;
+    }
+    .row-call-to-action {
+        margin-left: -15px;
+        //margin-right: -45px;
+        padding: 0;
+        margin-right: 0px;
+        box-sizing: border-box;
+        background: $near-black;
+        float: left;
+        width: 100%;
+        height: 100%;
+        padding: 0 0px 0 0;
+        ;
+        margin: 10px -15px 10px -0px !important;
+    }
+    // h1 {
+    //     text-align: center;
+    // }
+    >.input-group {
+        text-align: center;
+        width: 100%;
+    }
+    input.form-control.input-lg {
+        height: 42px;
+    }
+    .input-group,
+    .input-group.input-lg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    ::-webkit-input-placeholder {
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    :-ms-input-placeholder {
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    .form-control::-moz-placeholder {
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    .form-control:-ms-input-placeholder {
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    .form-control::-webkit-input-placeholder {
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+    }
+    select {
+        color: $grey;
+        @include hfont-reg;
+        font-size: $font-normal+1;
+    }
+    button.btn.btn-default.dropdown-toggle {
+        width: 85%;
+        height: 42px;
+        text-align: left;
+        margin-right: 5px;
+        @include font-big-input;
+        @include hfont-lt;
+        color: $grey;
+        box-sizing: border-box;
+        padding-top: 8px;
+    }
+    .btn-lg .caret, .btn-group-lg>.btn .caret {
+      border-width: 5px 5px 0;
+      border-bottom-width: 0;
+      float: right;
+      position: relative;
+      top: 6px;
+    }
+    button[type=submit] {
+        height: 42px;
+        width: 15%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+.calltoactionimgbox {
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    border-right: 10px solid #fff;
+    padding-right: 0
+}
+
+.calltoactiongetaquoteboxtop {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    background: grey;
+    border-bottom: solid 10px blue;
+    padding: 20px;
+    color: #fff;
+}
+
+.calltoactiongetaquoteboxbottom {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    background: #000;
+    border: none;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calltoactioncontent {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .calltoactiongetaquoteboxtop {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .calltoactiongetaquoteboxbottom {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
